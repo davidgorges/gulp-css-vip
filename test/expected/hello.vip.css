@@ -1,0 +1,11 @@
+body {
+  font-family: "Arial Black", Arial, Helvetica, sans-serif !important;
+  font-size: 12px !important;
+}
+
+p,
+div,
+.src {
+  color: red !important;
+  background-color: #000 !important;
+}
