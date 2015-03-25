@@ -3,6 +3,11 @@
 
 > css-vip plugin for [gulp](https://github.com/wearefractal/gulp)
 
+## What it does
+
+Sometimes, you need to override all css rules with ``!important`` (e.g. when writing embeddable widgets). 
+gulp-css-vip automatically adds to all your css rules automatically, so you don't have to. 
+
 ## Usage
 
 First, install `gulp-css-vip` as a development dependency:
@@ -17,10 +22,12 @@ Then, add it to your `gulpfile.js`:
 var css-vip = require("gulp-css-vip");
 
 gulp.src("./src/*.ext")
-	.pipe(css-vip())
+	.pipe(cssVip())
 	.pipe(gulp.dest("./dist"));
 ```
+## Thanks
 
+* [joshuahatcher/grunt-important-css](https://github.com/joshuahatcher/grunt-important-css) Original Grunt plugin
 
 ## License
 
