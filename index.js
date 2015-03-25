@@ -2,14 +2,8 @@ var through = require("through2"),
     rework = require("rework"),
 	gutil = require("gulp-util");
 
-module.exports = function (param) {
+module.exports = function () {
 	"use strict";
-
-	// if necessary check for required param(s), e.g. options hash, etc.
-	if (!param) {
-		throw new gutil.PluginError("gulp-css-vip", "No param supplied");
-	}
-
     // Fix nested rules
     function addImportantToCssRules(rules) {
         rules.forEach(function(r) {
