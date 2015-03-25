@@ -17,7 +17,8 @@
   },
   "dependencies": {
     "through2": "*",
-    "gulp-util": "~3.0.4"
+    "gulp-util": "~3.0.4",
+    "rework": "^1.0.1"
   },
   "devDependencies": {
     "coveralls": "*",
@@ -25,7 +26,6 @@
     "istanbul": "*",
     "mocha": "*",
     "mocha-lcov-reporter": "*",
-    "rework": "^1.0.1",
     "should": "~2.1.0"
   },
   "engines": {
