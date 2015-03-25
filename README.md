@@ -19,7 +19,7 @@ npm install --save-dev gulp-css-vip
 Then, add it to your `gulpfile.js`:
 
 ```javascript
-var css-vip = require("gulp-css-vip");
+var cssVip = require("gulp-css-vip");
 
 gulp.src("./src/*.ext")
 	.pipe(cssVip())
