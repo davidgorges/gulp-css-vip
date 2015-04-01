@@ -1,6 +1,6 @@
 {
   "name": "gulp-css-vip",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Lightweight gulp plugin that adds !important to all you css rules.",
   "keywords": [
     "gulpplugin",

@@ -1,0 +1,101 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@2.1.4
+3 info using node@v0.10.32
+4 verbose node symlink /usr/local/bin/node
+5 verbose publish [ '.' ]
+6 silly cache add args [ '.', null ]
+7 verbose cache add spec .
+8 silly cache add parsed spec { raw: '.',
+8 silly cache add   scope: null,
+8 silly cache add   name: null,
+8 silly cache add   rawSpec: '.',
+8 silly cache add   spec: '/Users/davidgorges/Sites/Playground/gulp-css-vip',
+8 silly cache add   type: 'directory' }
+9 verbose tar pack [ '/Users/davidgorges/.npm/gulp-css-vip/1.0.1/package.tgz',
+9 verbose tar pack   '/Users/davidgorges/Sites/Playground/gulp-css-vip' ]
+10 verbose tarball /Users/davidgorges/.npm/gulp-css-vip/1.0.1/package.tgz
+11 verbose folder /Users/davidgorges/Sites/Playground/gulp-css-vip
+12 info prepublish gulp-css-vip@1.0.1
+13 verbose addLocalTarball adding from inside cache /Users/davidgorges/.npm/gulp-css-vip/1.0.1/package.tgz
+14 silly cache afterAdd gulp-css-vip@1.0.1
+15 verbose afterAdd /Users/davidgorges/.npm/gulp-css-vip/1.0.1/package/package.json not in flight; writing
+16 verbose afterAdd /Users/davidgorges/.npm/gulp-css-vip/1.0.1/package/package.json written
+17 silly publish { name: 'gulp-css-vip',
+17 silly publish   version: '1.0.1',
+17 silly publish   description: 'Lightweight gulp plugin that adds !important to all you css rules.',
+17 silly publish   keywords: [ 'gulpplugin', 'css', 'reset', 'important', 'widget', 'vip' ],
+17 silly publish   author:
+17 silly publish    { name: 'David Gorges',
+17 silly publish      email: 'david.gorges@leaphub.de',
+17 silly publish      url: 'https://github.com/davidgorges' },
+17 silly publish   repository:
+17 silly publish    { type: 'git',
+17 silly publish      url: 'https://github.com/davidgorges/gulp-css-vip' },
+17 silly publish   scripts:
+17 silly publish    { test: 'istanbul test _mocha --report html -- test/*.js --reporter spec',
+17 silly publish      coveralls: 'istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage' },
+17 silly publish   dependencies: { through2: '*', 'gulp-util': '~3.0.4', rework: '^1.0.1' },
+17 silly publish   devDependencies:
+17 silly publish    { coveralls: '*',
+17 silly publish      'event-stream': '*',
+17 silly publish      istanbul: '*',
+17 silly publish      mocha: '*',
+17 silly publish      'mocha-lcov-reporter': '*',
+17 silly publish      should: '~2.1.1' },
+17 silly publish   engines: { node: '>=0.8.0', npm: '>=1.2.10' },
+17 silly publish   license: 'MIT',
+17 silly publish   readme: '# gulp-css-vip\n[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]  [![Coverage Status][coveralls-image]][coveralls-url] [![Dependency Status][depstat-image]][depstat-url]\n\n> css-vip plugin for [gulp](https://github.com/wearefractal/gulp)\n\n## What it does\n\nSometimes, you need to override all css rules with ``!important`` (e.g. when writing embeddable widgets). \ngulp-css-vip automatically adds to all your css rules automatically, so you don\'t have to. \n\n## Usage\n\nFirst, install `gulp-css-vip` as a development dependency:\n\n```shell\nnpm install --save-dev gulp-css-vip\n```\n\nThen, add it to your `gulpfile.js`:\n\n```javascript\nvar cssVip = require("gulp-css-vip");\n\ngulp.src("./src/*.ext")\n\t.pipe(cssVip())\n\t.pipe(gulp.dest("./dist"));\n```\n## Thanks\n\n* [joshuahatcher/grunt-important-css](https://github.com/joshuahatcher/grunt-important-css) Original Grunt plugin\n\n## License\n\n[MIT License](http://en.wikipedia.org/wiki/MIT_License)\n\n[npm-url]: https://npmjs.org/package/gulp-css-vip\n[npm-image]: https://badge.fury.io/js/gulp-css-vip.png\n\n[travis-url]: http://travis-ci.org/davidgorges/gulp-css-vip\n[travis-image]: https://secure.travis-ci.org/davidgorges/gulp-css-vip.png?branch=master\n\n[coveralls-url]: https://coveralls.io/r/davidgorges/gulp-css-vip\n[coveralls-image]: https://coveralls.io/repos/davidgorges/gulp-css-vip/badge.png\n\n[depstat-url]: https://david-dm.org/davidgorges/gulp-css-vip\n[depstat-image]: https://david-dm.org/davidgorges/gulp-css-vip.png\n',
+17 silly publish   readmeFilename: 'README.md',
+17 silly publish   gitHead: 'b2b4983787bc582e01eff678efef93b652c66b77',
+17 silly publish   bugs: { url: 'https://github.com/davidgorges/gulp-css-vip/issues' },
+17 silly publish   homepage: 'https://github.com/davidgorges/gulp-css-vip',
+17 silly publish   _id: 'gulp-css-vip@1.0.1',
+17 silly publish   _shasum: '2e46e2ef33a74e7084f52fa99e427a43155b5295',
+17 silly publish   _from: '.' }
+18 verbose mapToRegistry name gulp-css-vip
+19 verbose mapToRegistry uri https://registry.npmjs.org/gulp-css-vip
+20 verbose publish registryBase https://registry.npmjs.org/
+21 verbose request on initialization, where is /gulp-css-vip
+22 verbose request after pass 1, where is /gulp-css-vip
+23 verbose request url raw /gulp-css-vip
+24 verbose request resolving registry [ 'https://registry.npmjs.org/', './gulp-css-vip' ]
+25 verbose request after pass 2, where is https://registry.npmjs.org/gulp-css-vip
+26 verbose request sending authorization for write operation
+27 info attempt registry request try #1 at 12:27:35
+28 verbose request id 4758c35c4b1a9321
+29 http request PUT https://registry.npmjs.org/gulp-css-vip
+30 http 409 https://registry.npmjs.org/gulp-css-vip
+31 verbose request on initialization, where is /gulp-css-vip
+32 verbose request after pass 1, where is /gulp-css-vip?write=true
+33 verbose request url raw /gulp-css-vip?write=true
+34 verbose request resolving registry [ 'https://registry.npmjs.org/', './gulp-css-vip?write=true' ]
+35 verbose request after pass 2, where is https://registry.npmjs.org/gulp-css-vip?write=true
+36 verbose request no auth needed
+37 info attempt registry request try #1 at 12:27:36
+38 http request GET https://registry.npmjs.org/gulp-css-vip?write=true
+39 http 200 https://registry.npmjs.org/gulp-css-vip?write=true
+40 verbose stack Error: cannot modify pre-existing version
+40 verbose stack     at conflictError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/publish.js:155:11)
+40 verbose stack     at RegClient.putNext (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/publish.js:123:15)
+40 verbose stack     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/publish.js:105:15)
+40 verbose stack     at f (/usr/local/lib/node_modules/npm/node_modules/once/once.js:16:25)
+40 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:106:16
+40 verbose stack     at f (/usr/local/lib/node_modules/npm/node_modules/once/once.js:16:25)
+40 verbose stack     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:276:12)
+40 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:197:65)
+40 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:237:22)
+40 verbose stack     at Request.emit (events.js:98:17)
+41 verbose pkgid gulp-css-vip
+42 verbose cwd /Users/davidgorges/Sites/Playground/gulp-css-vip
+43 error Darwin 14.1.0
+44 error argv "node" "/usr/local/bin/npm" "publish"
+45 error node v0.10.32
+46 error npm  v2.1.4
+47 error code EPUBLISHCONFLICT
+48 error publish fail Cannot publish over existing version.
+48 error publish fail Update the 'version' field in package.json and try again.
+48 error publish fail
+48 error publish fail To automatically increment version numbers, see:
+48 error publish fail     npm help version
+49 verbose exit [ 1, true ]
