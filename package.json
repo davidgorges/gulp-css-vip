@@ -3,11 +3,16 @@
   "version": "1.0.1",
   "description": "Lightweight gulp plugin that adds !important to all you css rules.",
   "keywords": [
-    "gulpplugin"
+    "gulpplugin",
+    "css",
+    "reset",
+    "important",
+    "widget",
+    "vip"
   ],
   "author": {
     "name": "David Gorges",
-    "email": "",
+    "email": "david.gorges@leaphub.de",
     "url": "https://github.com/davidgorges"
   },
   "repository": "davidgorges/gulp-css-vip",
@@ -26,7 +31,7 @@
     "istanbul": "*",
     "mocha": "*",
     "mocha-lcov-reporter": "*",
-    "should": "~2.1.0"
+    "should": "~2.1.1"
   },
   "engines": {
     "node": ">=0.8.0",
