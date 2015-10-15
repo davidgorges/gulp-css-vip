@@ -7,6 +7,10 @@ module.exports = function () {
     // Fix nested rules
     function addImportantToCssRules(rules) {
         rules.forEach(function(r) {
+            // Ignore @font-face declarations
+            if (r.type === 'font-face') {
+                return false;
+            }
             if (r.declarations) {
                 r.declarations.forEach(function(d) {
                     // Don't add important twice
